@@ -16,7 +16,7 @@ public class Test {
 			java.sql.Statement stmt = con.createStatement();
 		     String query= "SELECT * from cutomer where Name='Nagaraj';";
 			ResultSet rs=stmt.executeQuery(query);
-			System.out.println("Id    Name     Age   ");
+			System.out.println("Id    Name     Age  phonenumber ");
 			
 			while(rs.next())
 				System.out.println(""+rs.getInt(1)+"   "+rs.getString(2) +"   "+rs.getInt(3));
